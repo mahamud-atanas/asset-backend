@@ -15,7 +15,7 @@ if(!config.get('jwtPrivateKey')) {
 }
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost/assetDB')
+mongoose.connect('mongodb+srv://mahamudatanas:<db_password>@cluster0.bgdsgx4.mongodb.net/')
     .then(() => console.log('Database connected successfully...'))
     .catch(err => console.log('Database not connected...', err));
 
