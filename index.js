@@ -3,6 +3,7 @@ const config = require('config');
 const auth = require('./Routes/auth');
 const users = require('./Routes/users');
 const asset = require('./Routes/asset');
+const request = require('./Routes/request');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const express = require('express');
@@ -30,6 +31,7 @@ app.use(cors());
 app.use('/api/users', users);
 app.use('/api/auth', auth);
 app.use('/api/asset', asset);
+app.use('/api/request', request);
 
 // Start server
 const port = process.env.PORT || 3000;
